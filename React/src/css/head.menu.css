@@ -1,8 +1,7 @@
-
-#menu:hover a{
+#menu:hover a {
   opacity: 0.25;
 }
-#menu a:hover{
+#menu a:hover {
   transition: transform 0.5s ease;
   opacity: 1;
 }

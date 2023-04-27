@@ -33,7 +33,6 @@ const CompCreateBlogs = () => {
         console.log(error);
       });
     Swal.fire("Agrego Producto", "El producto fue creado con éxito", "success");
-    // form.current.reset();
     navigate("/showblog");
   };
 

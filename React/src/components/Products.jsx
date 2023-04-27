@@ -87,10 +87,15 @@ const Products = () => {
             return (
               <div key={product.id}>
                 <ul className="grid">
-                  <a href={`/productdetail/${product.id}`}>
+                  <div>
+                    {/* <a href={`/productdetail/${product.id}`}> */}
                     <li className="border-solid border-slate-300 border-2 rounded-xl">
                       <div className="col-4-col">
-                        <img src={product.link} className="rounded-lg" />
+                        <div>
+                          <a href={`/productdetail/${product.id}`}>
+                            <img src={product.link} alt="imagen producto" />
+                          </a>
+                        </div>
                         <div className="mt-3 mx-3">
                           <span className="text-xl font-semibold mt-2">
                             {product.name}
@@ -120,7 +125,8 @@ const Products = () => {
                         </div>
                       </div>
                     </li>
-                  </a>
+                    {/* </a> */}
+                  </div>
                 </ul>
               </div>
             );
