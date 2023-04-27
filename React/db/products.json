@@ -1,0 +1,113 @@
+{
+  "products":[
+    {
+      "id": 1,
+      "name": "Canasta",
+      "descriptionLong": "Canasta para diversos usos en colores a elección",
+      "descriptionShort": "Canasta multi uso",
+      "price": 2500,
+      "img": "/public/img/product-1.jpg",
+      "category": "canasta"
+    }, 
+    {
+      "id": 2,
+      "name": "Delantal",
+      "descriptionLong": "Es el segundo producto con la descripción larga",
+      "descriptionShort": "Es el segundo producto",
+      "price": 4500,
+      "img": "/public/img/product-2.jpg",
+      "category": "delantal"
+
+    },
+    {
+      "id": 3,
+      "name": "Canasta",
+      "descriptionLong": "Es el tercer producto con la descripción larga",
+      "descriptionShort": "Es el tercer producto",
+      "price": 2800,
+      "img": "/public/img/product-3.jpg",
+      "category": "canasta"
+    },
+    {
+      "id": 4,
+      "name": "Canasta",
+      "descriptionLong": "Es el cuarto producto con la descripción larga",
+      "descriptionShort": "Es el cuarto producto",
+      "price": 3500,
+      "img": "/public/img/product-4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "producto 5",
+      "descriptionLong": "Es el quinto producto con la descripción larga",
+      "descriptionShort": "Es el quinto producto",
+      "price": 4500,
+      "img": "/public/img/product-5.jpg",
+      "category": "canasta"
+    },
+    {
+      "id": 6,
+      "name": "producto 6",
+      "descriptionLong": "Es el sexto producto con la descripción larga",
+      "descriptionShort": "Es el sexto producto",
+      "price": 4500,
+      "img": "/public/img/product-6.jpg",
+      "category": "canasta"
+    },
+    {
+      "id": 7,
+      "name": "producto 7",
+      "descriptionLong": "Es el septimo producto con la descripción larga",
+      "descriptionShort": "Es el septimo producto",
+      "price": 3800,
+      "img": "/public/img/product-7.jpg",
+      "category": "piluso"
+    },
+    {
+      "id": 8,
+      "name": "producto 8",
+      "descriptionLong": "Es el octavo producto con la descripción larga",
+      "descriptionShort": "Es el octavo producto",
+      "price": 6500,
+      "img": "/public/img/product-8.jpg",
+      "category": "mantel"
+    },
+    {
+      "id": 9,
+      "name": "producto 9",
+      "descriptionLong": "Es el noveno producto con la descripción larga",
+      "descriptionShort": "Es el noveno producto",
+      "price": 5000,
+      "img": "/public/img/product-9.jpg",
+      "category": "canasta"
+    },
+    {
+      "id": 10,
+      "name": "producto 10",
+      "descriptionLong": "Es el decimo producto con la descripción larga",
+      "descriptionShort": "Es el decimo producto",
+      "price": 3500,
+      "img": "/public/img/product-10.jpg",
+      "category": "mantel"
+    },
+    {
+      "id": 11,
+      "name": "producto 11",
+      "descriptionLong": "Es el once producto con la descripción larga",
+      "descriptionShort": "Es el once producto",
+      "price": 4900,
+      "img": "/public/img/product-11.jpg",
+      "category": "canasta"
+    },
+    {
+      "id": 12,
+      "name": "producto 12",
+      "descriptionLong": "Es el doce producto con la descripción larga",
+      "descriptionShort": "Es el doce producto",
+      "price": 3700,
+      "img": "/public/img/product-13.jpg",
+      "category": "mate"
+    }
+  ]
+  }
+  
