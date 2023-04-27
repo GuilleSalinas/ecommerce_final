@@ -7,6 +7,7 @@ import Products from "./Products";
 import Grid from "./grid/Grid";
 
 const FullPage = () => {
+  
   return (
     <>
       <Navbar />

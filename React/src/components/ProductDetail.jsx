@@ -15,7 +15,7 @@ const ProductDetail = (data) => {
     const getProducts = async()=>{
         setLoading(true);
         // const response = await fetch (`http://localhost:8000/products/${id}`)
-        const response = await fetch (`http://localhost:5000/blogs/${id}`)
+        const response = await fetch (`http://localhost:5001/blogs/${id}`)
         setProduct(await response.json());
         setLoading(false);
     }

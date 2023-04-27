@@ -1,10 +1,13 @@
 import { ShoppingOutlined } from "@ant-design/icons";
-
+import Cookies from "universal-cookie";
+const cookies = new Cookies();
 
 const Navbar = () => {
+  const cerrarSesion = () => {
+    cookies.remove("nombre", { path: "/" });
+    window.location.href = "/";
+  };
 
-
-  
   return (
     <>
       <header>
@@ -53,11 +56,10 @@ const Navbar = () => {
                   </a>
                 </li>
 
-                {/* <li>
-                  <a> Cerrar Sesión</a>
-                </li> */}
-
-
+                <li className="">
+                  <h3 className="justify-start font-normal italic text-lg"> Usuario: {cookies.get("nombre")} </h3>
+                  <button onClick={() => cerrarSesion()} className="block mt-4 lg:inline-block lg:mt-0 text-[#606063] hover:text-teal-700 mr-4 border-b-2 border-[#D9DFF7] hover:border-b-2 hover:border-teal-700">Cerrar Sesión</button>
+                </li>
               </ul>
             </nav>
             <a href="/cart" className="mb-3">
@@ -76,6 +78,5 @@ const Navbar = () => {
     </>
   );
 };
-
 
 export default Navbar;

@@ -8,6 +8,8 @@ import Navbar from "../components/Navbar";
 const URI = "http://localhost:5001/blogs/";
 
 const CompShowBlogs = () => {
+  
+
   // Lo primero configurar los Hooks
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {

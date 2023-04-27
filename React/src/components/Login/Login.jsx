@@ -2,12 +2,14 @@ import axios from "axios";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import Cookies from "universal-cookie";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
-// para las consultas a la DB del usuario instalo axios y MD5 para la clave
 
+// para las consultas a la DB del usuario instalo axios y MD5 para la clave
 const Login = () => {
   const navigate = useNavigate();
+
   return (
     <>
       <Navbar />
@@ -30,12 +32,19 @@ const Login = () => {
               },
             });
             const isAdmin = response.data.isAdmin;
+
+            // aquie van las cookies
+            const cookies = new Cookies();
+            cookies.set("nombre", response.data.name, { path: "/" });
+            // -----------------------
+
             if (isAdmin) {
               Swal.fire(
                 "Administrador",
                 "Bienvenido, puedes modificar los productos",
                 "success"
               );
+              // window.location.href = "/showblog";
               navigate("/showblog");
             } else {
               Swal.fire("Bienvenido/a", "Deco Ideas", "success");
@@ -44,9 +53,9 @@ const Login = () => {
           } catch (error) {
             console.log(error);
             Swal.fire(
-              "Error",
-              "Usuario o password incorrectos, vuelva a intntarlo",
-              "error"
+              "Datos Invalidos",
+              "Verifique Usuario o Password, vuelva a intntarlo",
+              "warning"
             );
           }
         }}
