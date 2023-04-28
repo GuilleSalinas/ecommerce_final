@@ -57,8 +57,18 @@ const Navbar = () => {
                 </li>
 
                 <li className="">
-                  <h3 className="justify-start font-normal italic text-lg"> Usuario: {cookies.get("nombre")} </h3>
-                  <button onClick={() => cerrarSesion()} className="block mt-4 lg:inline-block lg:mt-0 text-[#606063] hover:text-teal-700 mr-4 border-b-2 border-[#D9DFF7] hover:border-b-2 hover:border-teal-700">Cerrar Sesión</button>
+                  <h3 className="justify-start font-semibold italic text-lg text-[#1c9d94]">
+                    {cookies.get("nombre")
+                      ? "Bienvenido: " + cookies.get("nombre")
+                      : ""}
+                    {/* {cookies.get("nombre")}{" "} */}
+                  </h3>
+                  <button
+                    onClick={() => cerrarSesion()}
+                    className="block mt-4 lg:inline-block lg:mt-0 text-[#606063] hover:text-teal-700 mr-4 border-b-2 border-[#D9DFF7] hover:border-b-2 hover:border-teal-700"
+                  >
+                    Cerrar Sesión
+                  </button>
                 </li>
               </ul>
             </nav>
@@ -67,11 +77,6 @@ const Navbar = () => {
                 style={{ fontSize: "30px", color: "#088178" }}
               />
             </a>
-            {/* <img
-              src="/public/img/menu.png"
-              className="menu-icon"
-              onClick="menutoggle()"
-            /> */}
           </div>
         </div>
       </header>

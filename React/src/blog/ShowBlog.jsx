@@ -8,8 +8,6 @@ import Navbar from "../components/Navbar";
 const URI = "http://localhost:5001/blogs/";
 
 const CompShowBlogs = () => {
-  
-
   // Lo primero configurar los Hooks
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
@@ -20,6 +18,24 @@ const CompShowBlogs = () => {
   const getBlogs = async () => {
     const res = await axios.get(URI);
     setBlogs(res.data);
+  };
+
+  // procedimiento para preguntar si quiere eliminar un producto
+  const deleteAsk = (id) => {
+    Swal.fire({
+      title: "¿Quieres Borrar el producto?",
+      showDenyButton: true,
+      showCancelButton: true,
+      confirmButtonText: "Borrar",
+      denyButtonText: `No Borrar`,
+    }).then((result) => {
+      if (result.isConfirmed) {
+        deleteBlog(id);
+        Swal.fire("Borrado!", "", "success");
+      } else if (result.isDenied) {
+        Swal.fire("El Producto no fue borrado", "", "info");
+      }
+    });
   };
 
   // procedimiento para eliminar un blog (un producto)
@@ -78,7 +94,7 @@ const CompShowBlogs = () => {
                     Editar
                   </Link>
                   <button
-                    onClick={() => deleteBlog(blog.id)}
+                    onClick={() => deleteAsk(blog.id)}
                     className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r"
                   >
                     Borrar
