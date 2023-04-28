@@ -1,5 +1,5 @@
 import { ShoppingOutlined } from "@ant-design/icons";
-import { Drawer } from "antd";
+import { Badge, Drawer } from "antd";
 import React, { useState } from "react";
 
 const ShoppingCart = () => {
@@ -15,10 +15,22 @@ const ShoppingCart = () => {
 
   return (
     <>
-      <button onClick={() => showDrawer()}>
+      <div>
+        <span style={{ marginRight: 0 }}>
+          <Badge count={1}>
+            <button onClick={() => showDrawer()}>
+              <ShoppingOutlined
+                style={{ fontSize: "30px", color: "#088178" }}
+              />
+            </button>
+          </Badge>
+        </span>
+      </div>
+      
+      {/* <button onClick={() => showDrawer()}>
         <ShoppingOutlined style={{ fontSize: "30px", color: "#088178" }} />
         <span className="font-semibold text-sm text-orange-700">0</span>
-      </button>
+      </button> */}
 
       <Drawer
         title="Shopping Cart"
