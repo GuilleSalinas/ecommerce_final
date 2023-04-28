@@ -1,5 +1,6 @@
-import { ShoppingOutlined } from "@ant-design/icons";
+// import { ShoppingOutlined } from "@ant-design/icons";
 import Cookies from "universal-cookie";
+import ShoppingCart from "./ShoppingCart";
 const cookies = new Cookies();
 
 const Navbar = () => {
@@ -72,11 +73,15 @@ const Navbar = () => {
                 </li>
               </ul>
             </nav>
-            <a href="/cart" className="mb-3">
-              <ShoppingOutlined
-                style={{ fontSize: "30px", color: "#088178" }}
-              />
-            </a>
+            <div>
+              {/* <a href="/shoppingcart" className="mb-3">
+                <ShoppingOutlined
+                  style={{ fontSize: "30px", color: "#088178" }}
+                />
+              </a>
+              <span className="font-semibold text-sm text-orange-700">0</span> */}
+              <ShoppingCart/>
+            </div>
           </div>
         </div>
       </header>

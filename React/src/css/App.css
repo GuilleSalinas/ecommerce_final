@@ -449,6 +449,11 @@ form a {
 
 /* ---- detalle del carrito comppras ---- */
 
+.item_total{
+  background-color: brown;
+  font-size: 15px;
+}
+
 .cart-page {
   margin: 80px auto;
 }
