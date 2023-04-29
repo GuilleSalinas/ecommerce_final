@@ -27,8 +27,12 @@ const Ofertas = () => {
                   para colocar todo tipo de objetos.
                   <br />
                 </p>
-                <a href="" className="btn">
-                  Comprar &#8594;
+                <a
+                  href="https://instagram.com/decoideasmariela?igshid=YmMyMTA2M2Y="
+                  target="_blank"
+                  className="btn"
+                >
+                  Mas ofertas en mis Redes &#8594;
                 </a>
               </div>
             </div>

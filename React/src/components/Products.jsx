@@ -7,11 +7,11 @@ const Products = () => {
 
   const agregarDatos = (val)=>{
     let setGuarda = guarda.push(val)
-    console.log('guarda2 = ', guarda);
+    // console.log('guarda2 = ', guarda);
     // coloco los productos en localstorage
     localStorage.setItem('carrito', JSON.stringify(guarda))
   }
-// ==========================================================================
+  // =========================================
 
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState(data);
