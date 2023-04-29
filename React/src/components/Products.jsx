@@ -1,10 +1,17 @@
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import { useEffect, useState } from "react";
-import { useLocalStorages } from "./useLocalStoraje";
 
 const Products = () => {
-  const [text, setText] = useLocalStorages("text", "");
-  const [times, setTimes] = useState("times", 0);
+  // Aqui guardo los valores en localstorage
+  const [guarda, setGuarda] = useState([]);
+
+  const agregarDatos = (val)=>{
+    let setGuarda = guarda.push(val)
+    console.log('guarda2 = ', guarda);
+    // coloco los productos en localstorage
+    localStorage.setItem('carrito', JSON.stringify(guarda))
+  }
+// ==========================================================================
 
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState(data);
@@ -113,7 +120,7 @@ const Products = () => {
                               S {product.price}
                             </p>
                             <button
-                              onClick={() => setText(product.name)}
+                              onClick={() => agregarDatos(product)}
                               className="flex items-center bg-transparent hover:bg-[#49807c] text-[#1c9d94] font-semibold hover:text-white 
                                                 p-2 border border-[#888889] hover:border-transparent rounded transition ease-in duration-500"
                             >
