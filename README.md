@@ -24,31 +24,33 @@ npm run dev
 
 Se ulilizo la base de datos [MySQL](https://www.mysql.com/) la cual cuenta con la siguiente estructura
 
-- nombre de la base: database_app
-- tablas de la base:
+- Nombre de la base: database_app
+- Tablas de la base:
 
   - blogs
 
-    - id autoincremental
-    - name varchar(50)
-    - ndescriptionLong varchar(150)
-    - descriptionShort varchar(50)
-    - price int(5)
-    - link varchar(300)
-    - category varchar(30)
+    - id :  autoincremental
+    - name :  varchar(50)
+    - ndescriptionLong :  varchar(150)
+    - descriptionShort :  varchar(50)
+    - price :  int(5)
+    - link :  varchar(300)
+    - category :  varchar(30)
 
   - users
-    - id autoincremental
-    - name varchar(30)
-    - mail varchar(100)
-    - password varchar(100)
-    - isAdmin tinyint(1) (este campo es boolean)
+    - id :  autoincremental
+    - name :  varchar(30)
+    - mail :  varchar(100)
+    - password :  varchar(100)
+    - isAdmin :  tinyint(1) (este campo es boolean)
 
 ### Pre-requisitos - Instalación 📋
 
 Las dependencias se encuentran el los respectivos archivos package.json
 
 ## Construido con 🛠️
+Para los estilos se uso el framework [Tailwind](https://tailwindcss.com/). 
+En el archivo React-Tailwind.pdf esta la explicación de como instalarlo.
 
 Herramienta para hacer las consultas al servidor. [TanStack Query v4](https://tanstack.com/query/latest/docs/react/installation)
 
