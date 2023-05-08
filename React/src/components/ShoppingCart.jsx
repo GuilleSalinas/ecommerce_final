@@ -1,49 +1,76 @@
-import { ShoppingOutlined } from "@ant-design/icons";
+import { DeleteOutlined, ShoppingOutlined } from "@ant-design/icons";
 import { Badge, Drawer } from "antd";
-import { useEffect, useState } from "react";
-import Swal from "sweetalert2";
+import { useState } from "react";
+// import { useNavigate } from "react-router-dom";
+
+const BorrarCarroAll = () => {
+  // Borra todos los productos del carrito, solo falta recargar la pagina....
+  localStorage.removeItem("carrito");
+};
+
+
+
+const DeleteProductCar = (e) => {
+  console.log(e);
+  const isDelete = window.confirm("Deseas eliminar el producto del carrito?");
+  if (isDelete) {
+    // almaceno en myArrayLocalStorage el array del local storage transformado en un objeto JSON
+    let myArrayLocalStorage = JSON.parse(localStorage.getItem("carrito"));
+    console.log(myArrayLocalStorage);
+
+    // Borro el elemento del indice
+     const prodEliminar = myArrayLocalStorage.filter(prod => prod.id !== e)
+     console.log(prodEliminar)
+
+    // Guardo el nuevo array en formato JSON en el localStorage
+    localStorage.setItem('carrito', JSON.stringify(prodEliminar))
+    ShoppingCart()
+  }
+};
 
 const ShoppingCart = () => {
   // Obtengo los valores de localstorage
   const obtenerLS = () => {
-    // aqui calculo el total del carrito
-    const [total, setTotal] = useState(0);
-    console.log(total)
-    // setTotal(producto.price)
-
     if (localStorage.getItem("carrito")) {
       // Hay valores en el localstorage
-      let nombre = JSON.parse(localStorage.getItem("carrito"));
-      
+      let ProdCard = JSON.parse(localStorage.getItem("carrito"));
+      // console.log('CarritoLenght=',ProdCard.length)
       return (
         <div>
-          <ul className="italic font-bold flex text-sm items-center ml-4 gap-12 mb-4">
+          <ul className="italic font-bold flex text-sm items-center ml-4 gap-14 mb-4">
             <p>Producto</p>
             <p>descripción</p>
             <p className="ml-4">precio</p>
           </ul>
-          {nombre.length === 0
-            ? "carrito vacio"
-            : nombre.map((producto) => (
-              <div key={producto.id} className="">
-                  <ul className="flex text-sm items-center">
-                    <li className="">
-                      <img
-                        src={producto.link}
-                        alt="imagen producto"
-                        className=" mt-2 w-12 rounded-lg"
-                      />
-                    </li>
-                    <li className="">
-                      <h3>{producto.name}</h3>
-                    </li>
-                    <li>
-                      <h3>{producto.descriptionShort}</h3>
-                    </li>
-                    <li>
-                      <h3>${producto.price}</h3>
-                    </li>
-                  </ul>
+          {ProdCard.length === 0
+            ? <h3>"No hay productos en el Carrito"</h3>
+            : ProdCard.map((producto) => (
+                <div key={producto.id} className="">
+                  <tbody>
+                    <ul className="flex items-center justify-between gap-2">
+                      <li className="">
+                        <img
+                          src={producto.link}
+                          alt="imagen producto"
+                          className="w-14 h-14 object-cover rounded-lg"
+                        />
+                      </li>
+                      <li className="">
+                        <h3 className="text-sm">{producto.name}</h3>
+                      </li>
+                      <li>
+                        <h3 className="text-sm">{producto.descriptionShort}</h3>
+                      </li>
+                      <li>
+                        <h3 className="text-sm">${producto.price}</h3>
+                      </li>
+                      <li>
+                        <button onClick={() => DeleteProductCar(producto.id)}>
+                          <DeleteOutlined className="text-xl mb-2 text-rose-600" />
+                        </button>
+                      </li>
+                    </ul>
+                  </tbody>
                 </div>
               ))}
           <div>
@@ -86,12 +113,18 @@ const ShoppingCart = () => {
         </span>
       </div>
       <Drawer
-        title="Shopping Cart"
+        title="Carro de Compras"
         placement="right"
         onClose={onClose}
         open={open}
       >
         {obtenerLS()}
+        <button
+          onClick={() => BorrarCarroAll()}
+          className="bg-[#088178] py-2 px-4 rounded-xl mt-8 text-white hover:bg-[#26c1b6]"
+        >
+          Borrar carrito
+        </button>
       </Drawer>
     </>
   );

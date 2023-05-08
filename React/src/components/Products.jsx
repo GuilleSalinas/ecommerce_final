@@ -1,16 +1,14 @@
-import { ShoppingCartOutlined } from "@ant-design/icons";
+import { RightCircleFilled, ShoppingCartOutlined } from "@ant-design/icons";
 import { useEffect, useState } from "react";
 
 const Products = () => {
   // Aqui guardo los valores en localstorage
   const [guarda, setGuarda] = useState([]);
 
-  const agregarDatos = (val)=>{
-    let setGuarda = guarda.push(val)
-    // console.log('guarda2 = ', guarda);
-    // coloco los productos en localstorage
-    localStorage.setItem('carrito', JSON.stringify(guarda))
-  }
+  const agregarDatos = (val) => {
+    let setGuarda = guarda.push(val);
+    localStorage.setItem("carrito", JSON.stringify(guarda));
+  };
   // =========================================
 
   const [data, setData] = useState([]);
@@ -45,10 +43,37 @@ const Products = () => {
     setFilter(updatedList);
   };
 
+  // aqui se ordenan los productos de menor a mayor por el precio.
+  const filterPrice = (data) => {
+    let NewArrayOrderPrice = data.sort((a, b) => {
+      if (a.price > b.price) {
+        return 1;
+      } else if (a.price < b.price) {
+        return -1;
+      }
+      return 0;
+    });
+    // console.log(arr)
+    setFilter(NewArrayOrderPrice);
+  };
+
   const ShowProducts = () => {
     return (
       <>
         <div className="flex gap-4 justify-center mb-7">
+          <div className="flex items-center">
+            <h3 className="ml-4 mr-2 text-[#1c9d94] font-semibold">Orden</h3>
+            <RightCircleFilled
+              style={{
+                fontSize: "22px",
+                color: "#088178",
+                padding: 0,
+                marginBottom: 4,
+                marginRight: 4,
+              }}
+            />
+          </div>
+
           <button
             className="bg-transparent hover:bg-[#147770] text-[#1c9d94] font-semibold
                  hover:text-white py-2 px-4 border border-[#888889] hover:border-transparent rounded transition ease-in duration-500"
@@ -56,6 +81,15 @@ const Products = () => {
           >
             Todos
           </button>
+
+          <button
+            className="bg-transparent hover:bg-[#147770] text-[#1c9d94] font-semibold
+                 hover:text-white py-2 px-4 border border-[#888889] hover:border-transparent rounded transition ease-in duration-500"
+            onClick={() => filterPrice(data)}
+          >
+            Menor a Mayor precio
+          </button>
+
           <button
             className="bg-transparent hover:bg-[#147770] text-[#1c9d94] font-semibold
                  hover:text-white py-2 px-4 border border-[#888889] hover:border-transparent rounded transition ease-in duration-500"
@@ -63,6 +97,7 @@ const Products = () => {
           >
             Canastas
           </button>
+
           <button
             className="bg-transparent hover:bg-[#147770] text-[#1c9d94] font-semibold
                  hover:text-white py-2 px-4 border border-[#888889] hover:border-transparent rounded transition ease-in duration-500"
@@ -70,6 +105,7 @@ const Products = () => {
           >
             Delantales
           </button>
+
           <button
             className="bg-transparent hover:bg-[#147770] text-[#1c9d94] font-semibold
                  hover:text-white py-2 px-4 border border-[#888889] hover:border-transparent rounded transition ease-in duration-500"
@@ -77,6 +113,7 @@ const Products = () => {
           >
             Manteles
           </button>
+
           <button
             className="bg-transparent hover:bg-[#147770] text-[#1c9d94] font-semibold
                  hover:text-white py-2 px-4 border border-[#888889] hover:border-transparent rounded transition ease-in duration-500"
@@ -84,6 +121,7 @@ const Products = () => {
           >
             Pilusos
           </button>
+
           <button
             className="bg-transparent hover:bg-[#147770] text-[#1c9d94] font-semibold
                  hover:text-white py-2 px-4 border border-[#888889] hover:border-transparent rounded transition ease-in duration-500"
@@ -128,7 +166,9 @@ const Products = () => {
                                 style={{
                                   fontSize: "22px",
                                   color: "#088178",
-                                  padding: "0",
+                                  padding: 0,
+                                  marginBottom: 4,
+                                  marginRight: 4,
                                 }}
                               />
                               <span>Carrito</span>

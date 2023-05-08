@@ -19,7 +19,6 @@ app.use(cors());
 app.use("/blogs", blogRoutes);
 app.use("/users", uRoutes);
 
-
 // aqui se define la conexion, en este caso con try/catch con authenticate.
 try {
   await db.authenticate();

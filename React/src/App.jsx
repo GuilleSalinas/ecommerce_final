@@ -5,8 +5,9 @@ import CompShowBlogs from "./blog/ShowBlog";
 import FullPage from "./components/FullPage";
 import Login from "./components/Login/Login";
 import ProductDetail from "./components/ProductDetail";
-import Register from "./components/Register/Register";
+// import Register from "./components/Register/Register";
 import ShoppingCart from "./components/ShoppingCart";
+import Register from "./components/Register/Register";
 
 function App() {
   return (
