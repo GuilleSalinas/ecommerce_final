@@ -132,8 +132,11 @@ Este proyecto no contiene Licencia
 - A quienes me apoyaron día a día en esta hermosa profeción.
 
 ---
-## Capturas 
-
+### Capturas 
+![Image text](https://github.com/GuilleSalinas/ecommerce_final/blob/master/React/public/Capturas/Captura-01.png?raw=true)
+![Image text](https://github.com/GuilleSalinas/ecommerce_final/blob/master/React/public/Capturas/Captura-02.png?raw=true)
+![Image text](https://github.com/GuilleSalinas/ecommerce_final/blob/master/React/public/Capturas/Captura-03.png?raw=true)
+![Image text](https://github.com/GuilleSalinas/ecommerce_final/blob/master/React/public/Capturas/Captura-04.png?raw=true)
 
 
 ---
