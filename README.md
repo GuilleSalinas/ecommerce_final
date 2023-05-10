@@ -127,9 +127,9 @@ Este proyecto no contiene Licencia
 
 - En especial a mi Familia, quienes me apoyan incondicionalmente 📢
 - A todos mis compañeros de esta carrera.
-- Al cuerpo docente de ICARO en especial a Juan Arguelles, [Angel Martinez](https://github.com/letoor1234),
+- Al cuerpo docente de ICARO, a Juan Arguelles, [Angel Martinez](https://github.com/letoor1234),
   [Andrés Alvarez](https://github.com/aalvarezto).🤓.
-- A quienes me apoyaron día a día en esta hermosa profeción.
+- A quienes me apoyaron día a día en esta hermosa profesión.
 
 ---
 ### Capturas 
