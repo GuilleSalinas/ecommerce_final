@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "name": "Carlos",
+      "mail": "carlos@carlos.com",
+      "password": "carlos11",
+      "isAdmin": false
+    },
+    {
+      "name": "Pablo",
+      "mail": "pablo@pablo.com",
+      "password": "pablo22",
+      "isAdmin": false
+    },
+    {
+      "name": "Admin",
+      "mail": "admin@admin.com",
+      "password": "admin",
+      "isAdmin": true
+    },
+    {
+      "name": "Maria",
+      "mail": "maria@maria.com",
+      "password": "maria33",
+      "isAdmin": false
+    },
+    {
+      "name": "Jose",
+      "mail": "jose@jose.com",
+      "password": "jose44",
+      "isAdmin": false
+    },
+    {
+      "name": "Raul",
+      "mail": "raul@raul.com",
+      "password": "raul55",
+      "isAdmin": false
+    }
+  ]
+}

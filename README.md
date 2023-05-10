@@ -20,7 +20,9 @@ npm run server
 npm run dev
 ```
 
-## Contenido DB 🚀.\
+## Contenido DB 🚀.
+
+En la carpeta node/datavase/Data_Input_Base se encuentran dos archivos JSON, estos pueden ser utilizados para cargar la DB segun los campos correspondientes.
 
 Se ulilizo la base de datos [MySQL](https://www.mysql.com/) la cual cuenta con la siguiente estructura
 
@@ -29,27 +31,28 @@ Se ulilizo la base de datos [MySQL](https://www.mysql.com/) la cual cuenta con l
 
   - blogs
 
-    - id :  autoincremental
-    - name :  varchar(50)
-    - ndescriptionLong :  varchar(150)
-    - descriptionShort :  varchar(50)
-    - price :  int(5)
-    - link :  varchar(300)
-    - category :  varchar(30)
+    - id : autoincremental
+    - name : varchar(50)
+    - ndescriptionLong : varchar(150)
+    - descriptionShort : varchar(50)
+    - price : int(5)
+    - link : varchar(300)
+    - category : varchar(30)
 
   - users
-    - id :  autoincremental
-    - name :  varchar(30)
-    - mail :  varchar(100)
-    - password :  varchar(100)
-    - isAdmin :  tinyint(1) (este campo es boolean)
+    - id : autoincremental
+    - name : varchar(30)
+    - mail : varchar(100)
+    - password : varchar(100)
+    - isAdmin : tinyint(1) (este campo es boolean)
 
 ### Pre-requisitos - Instalación 📋
 
 Las dependencias se encuentran el los respectivos archivos package.json
 
 ## Construido con 🛠️
-Para los estilos se uso el framework [Tailwind](https://tailwindcss.com/). 
+
+Para los estilos se uso el framework [Tailwind](https://tailwindcss.com/).
 En el archivo React-Tailwind.pdf esta la explicación de como instalarlo.
 
 Herramienta para hacer las consultas al servidor. [TanStack Query v4](https://tanstack.com/query/latest/docs/react/installation)
@@ -129,5 +132,9 @@ Este proyecto no contiene Licencia
 - A quienes me apoyaron día a día en esta hermosa profeción.
 
 ---
+## Capturas 
 
+
+
+---
 ⌨️ con ❤️ por [Guille Salinas](https://github.com/GuilleSalinas) 😊

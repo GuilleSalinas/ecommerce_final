@@ -6,7 +6,7 @@
       "descriptionLong": "Canasta para diversos usos en colores a elección",
       "descriptionShort": "Canasta multi uso",
       "price": 2500,
-      "img": "/public/img/product-1.jpg",
+      "link": "https://picsum.photos/200/300",
       "category": "canasta"
     }, 
     {
@@ -15,7 +15,7 @@
       "descriptionLong": "Es el segundo producto con la descripción larga",
       "descriptionShort": "Es el segundo producto",
       "price": 4500,
-      "img": "/public/img/product-2.jpg",
+      "link": "https://picsum.photos/200/300",
       "category": "delantal"
 
     },
@@ -25,7 +25,7 @@
       "descriptionLong": "Es el tercer producto con la descripción larga",
       "descriptionShort": "Es el tercer producto",
       "price": 2800,
-      "img": "/public/img/product-3.jpg",
+      "link": "https://picsum.photos/200/300",
       "category": "canasta"
     },
     {
@@ -34,7 +34,8 @@
       "descriptionLong": "Es el cuarto producto con la descripción larga",
       "descriptionShort": "Es el cuarto producto",
       "price": 3500,
-      "img": "/public/img/product-4.jpg"
+      "link": "https://picsum.photos/200/300",
+      "category": "canasta"
     },
     {
       "id": 5,
@@ -42,7 +43,7 @@
       "descriptionLong": "Es el quinto producto con la descripción larga",
       "descriptionShort": "Es el quinto producto",
       "price": 4500,
-      "img": "/public/img/product-5.jpg",
+      "link": "https://picsum.photos/200/300",
       "category": "canasta"
     },
     {
@@ -51,7 +52,7 @@
       "descriptionLong": "Es el sexto producto con la descripción larga",
       "descriptionShort": "Es el sexto producto",
       "price": 4500,
-      "img": "/public/img/product-6.jpg",
+      "link": "https://picsum.photos/200/300",
       "category": "canasta"
     },
     {
@@ -60,7 +61,7 @@
       "descriptionLong": "Es el septimo producto con la descripción larga",
       "descriptionShort": "Es el septimo producto",
       "price": 3800,
-      "img": "/public/img/product-7.jpg",
+      "link": "https://picsum.photos/200/300",
       "category": "piluso"
     },
     {
@@ -69,7 +70,7 @@
       "descriptionLong": "Es el octavo producto con la descripción larga",
       "descriptionShort": "Es el octavo producto",
       "price": 6500,
-      "img": "/public/img/product-8.jpg",
+      "link": "https://picsum.photos/200/300",
       "category": "mantel"
     },
     {
@@ -78,7 +79,7 @@
       "descriptionLong": "Es el noveno producto con la descripción larga",
       "descriptionShort": "Es el noveno producto",
       "price": 5000,
-      "img": "/public/img/product-9.jpg",
+      "link": "https://picsum.photos/200/300",
       "category": "canasta"
     },
     {
@@ -87,7 +88,7 @@
       "descriptionLong": "Es el decimo producto con la descripción larga",
       "descriptionShort": "Es el decimo producto",
       "price": 3500,
-      "img": "/public/img/product-10.jpg",
+      "link": "https://picsum.photos/200/300",
       "category": "mantel"
     },
     {
@@ -96,7 +97,7 @@
       "descriptionLong": "Es el once producto con la descripción larga",
       "descriptionShort": "Es el once producto",
       "price": 4900,
-      "img": "/public/img/product-11.jpg",
+      "link": "https://picsum.photos/200/300",
       "category": "canasta"
     },
     {
@@ -105,7 +106,7 @@
       "descriptionLong": "Es el doce producto con la descripción larga",
       "descriptionShort": "Es el doce producto",
       "price": 3700,
-      "img": "/public/img/product-13.jpg",
+      "link": "https://picsum.photos/200/300",
       "category": "mate"
     }
   ]
