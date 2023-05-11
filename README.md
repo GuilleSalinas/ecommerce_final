@@ -115,6 +115,13 @@ Para las cookie uso univeral cookie
 npm i universal-cookie
 ```
 
+Para las animaciones del texto
+[react-type-animation](https://www.npmjs.com/package/react-type-animation?activeTab=readme)
+
+```
+npm i react-type-animation
+```
+
 ## Autores ✒️
 
 - **Guillermo Salinas** - _Trabajo Final_ - [ecommerce_final](https://github.com/GuilleSalinas/ecommerce_final)
@@ -132,12 +139,14 @@ Este proyecto no contiene Licencia
 - A quienes me apoyaron día a día en esta hermosa profesión.
 
 ---
-### Capturas 
+
+### Capturas
+
 ![Image text](https://github.com/GuilleSalinas/ecommerce_final/blob/master/React/public/Capturas/Captura-01.png?raw=true)
 ![Image text](https://github.com/GuilleSalinas/ecommerce_final/blob/master/React/public/Capturas/Captura-02.png?raw=true)
 ![Image text](https://github.com/GuilleSalinas/ecommerce_final/blob/master/React/public/Capturas/Captura-03.png?raw=true)
 ![Image text](https://github.com/GuilleSalinas/ecommerce_final/blob/master/React/public/Capturas/Captura-04.png?raw=true)
 
-
 ---
+
 ⌨️ con ❤️ por [Guille Salinas](https://github.com/GuilleSalinas) 😊
